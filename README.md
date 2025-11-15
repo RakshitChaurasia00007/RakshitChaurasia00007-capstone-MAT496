@@ -19,3 +19,13 @@ Expert 3 => (Conflict Resolver) : Reviews both the experts, resolves conflicts, 
 My main focus was to make the overall system ,ust get built using the LangGraph for the multi-agent workflow orchestration, Tavily web search for real-time automotive information retrieval, and structured output with Pydantic models for the consistent, safety-focused responses.​
 
 Results for the programme are displayed in a clean dashboard showing the confidence levels, verification status, issues found, and the source citations ensuring you get the trustworthy car maintenance guidance. This programme is highly recommended to every CAR Enthusiast. 
+
+
+## Reason for picking up this specific project & also Explaining how this project is aligned with the Course Content.
+
+### I wanted to build something practical that solves a real life problem I've experienced finding reliable car maintenance information online often means sifting through conflicting advice, outdated forum posts, and unreliable sources.​ Hence below is the idea which has risen 
+
+The 3-expert verification system idea came from how mechanics actually work in real life : one diagnoses, another double-checks, and then a senior mechanic who makes the final call. I thought, "Why not let's replicate this whole senario of the safety-critical workflow using AI?"​​
+
+This project let me explore how multiple AI agents that can collaborate on a single problem, each with specialized roles something which I found fascinating after learning about LangGraph's multi-agent capabilities.​
+
