@@ -29,3 +29,42 @@ The 3-expert verification system idea came from how mechanics actually work in r
 
 This project let me explore how multiple AI agents that can collaborate on a single problem, each with specialized roles something which I found fascinating after learning about LangGraph's multi-agent capabilities.​
 
+
+## Well! Now How This Project Aligns with Our LLM Course Content ?
+
+This project directly applies every major concept from MAT496:
+
+1. LangGraph (State, Nodes, Graph)
+
+I have built a StateGraph with 3 agent nodes (Expert 1, 2, 3) connected by edges in a sequential workflow​​.
+
+Used VerificationState to pass information between the agents (search results, responses, confidence levels)​​.
+
+2. Prompting
+
+Each expert has a custom system prompts defining their role, responsibilities, and output format​.
+
+Expert 1 focuses on giving the detailed answers, Expert 2 focuses on the verification part & at last Expert 3 focuses on conflict resolution​.
+
+3. Structured Output
+
+Implemented Pydantic models (ExpertResponse, CarExpert) with with_structured_output() to ensure consistent, parseable responses​.
+
+4. Tool Calling & Web Search
+
+Integrated Tavily web search as the tool that agents invoke to retrieve real-time automotive information​.
+
+Each expert calls the search tool with different queries (initial research vs. verification)​.
+
+5. RAG-like Behavior
+
+Agents search the web for automotive documentation, retrieve context, and generate answers based on that retrieved information​.
+
+6. LangSmith Debugging 
+
+The structured workflow makes it easy to trace which expert made what decision and why​.
+
+The creativity comes from the multi-agent verification pattern—instead of a single LLM response, three specialized agents collaborate to ensure accuracy and the safety, which is critical part for the car maintenance advice. 
+
+Hence, this is how our project aligns with the concepts of MAT- 496 course. 
+
