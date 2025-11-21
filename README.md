@@ -74,7 +74,7 @@ I plan to execute the working of my project by using the below steps.
 
 [DONE] =>  Step 1 will involve setting up the development environment and notebook structure, including installing required libraries such as (LangGraph, LangChain, Tavily, OpenAI), then configuring API keys for OpenAI and Tavily, after that we will be importing the dependencies, and initializing the LLM and the search tools.
 
-[TODO] =>  Step 2 will involve implementing the 3-expert verification system using LangGraph, including defining Pydantic models for the expert responses and state management, creating specialized instruction prompts for each expert (Primary Mechanic, Verification Specialist, Conflict Resolver), building the three expert functions, and wiring the StateGraph with the nodes and edges to create the sequential workflow.
+[DONE] =>  Step 2 will involve implementing the 3-expert verification system using LangGraph, including defining Pydantic models for the expert responses and state management, creating specialized instruction prompts for each expert (Primary Mechanic, Verification Specialist, Conflict Resolver), building the three expert functions, and wiring the StateGraph with the nodes and edges to create the sequential workflow.
 
 [TODO] =>  Step 3 will involve integrating web search and retrieval tools, including implementing the Tavily search function to fetch the automotive information, adding Wikipedia loader for the additional context if needed, and then ensuring each expert can call search tools with different verification-focused queries.
 
