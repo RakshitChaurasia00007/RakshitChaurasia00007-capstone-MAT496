@@ -78,6 +78,6 @@ I plan to execute the working of my project by using the below steps.
 
 [DONE] =>  Step 3 will involve integrating web search and retrieval tools, including implementing the Tavily search function to fetch the automotive information, adding Wikipedia loader for the additional context if needed, and then ensuring each expert can call search tools with different verification-focused queries.
 
-[TODO] =>  Step 4 will involve building the user interface and example demonstration, including creating the Markdown dashboard function to display the results with the confidence levels and verification status, adding an input cell for user questions, implementing the graph invocation with progress tracking, and running a complete example query to showcase the entire 3-expert workflow.
+[DONE] =>  Step 4 will involve building the user interface and example demonstration, including creating the Markdown dashboard function to display the results with the confidence levels and verification status, adding an input cell for user questions, implementing the graph invocation with progress tracking, and running a complete example query to showcase the entire 3-expert workflow.
 
 [TODO] =>  Step 5 will involve documentation, and final polish, including writing the complete README.md with project overview and alignment with course content,  adding source citations and safety warnings, testing the entire workflow end-to-end in Google Colab, and final code cleanup with comments.
