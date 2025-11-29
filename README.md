@@ -81,3 +81,41 @@ I plan to execute the working of my project by using the below steps.
 [DONE] =>  Step 4 will involve building the user interface and example demonstration, including creating the Markdown dashboard function to display the results with the confidence levels and verification status, adding an input cell for user questions, implementing the graph invocation with progress tracking, and running a complete example query to showcase the entire 3-expert workflow.
 
 [DONE] =>  Step 5 will involve documentation, and final polish, including writing the complete README.md with project overview and alignment with course content,  adding source citations and safety warnings, testing the entire workflow end-to-end in Google Colab, and final code cleanup with comments.
+
+
+## Flow of the Project 
+
+Environment setup & dependencies
+Install LangGraph, LangChain, OpenAI, Tavily, Wikipedia libraries and configure API keys (OpenAI, Tavily) for LLM and web search functionality.​
+
+User input handling & question preprocessing
+Accept automotive questions through notebook interface and prepare the initial query for processing by the expert system.​
+
+Pydantic data models (structured schemas)
+Define CarExpert, ExpertResponse, SearchQuery, and VerificationState models to ensure consistent, validated responses across all expert nodes.​
+
+Prompt design and refinement
+Create specialized system prompts for each expert: Primary Mechanic (detailed answers), Verification Specialist (cross-checking), and Conflict Resolver (final authority).​
+
+Expert 1 node: Primary Mechanic (information provider)
+First agent searches web using Tavily, processes automotive context, and generates initial comprehensive answer with safety warnings and confidence ratings.​
+
+Expert 2 node: Verification Specialist (cross-checker)
+Second agent performs independent web search with verification-focused queries, cross-checks Expert 1's response, identifies factual errors or safety concerns, and lists issues found.​
+
+Expert 3 node: Conflict Resolver (final authority)
+Third agent reviews both previous experts' responses, resolves conflicts, integrates best information, adds critical missing details, and produces final authoritative answer with complete source citations.​
+
+State management & transitions
+LangGraph VerificationState passes car question, search context, and expert responses sequentially through the three-expert workflow using defined edges.​
+
+LangGraph workflow integration (state, nodes, flow)
+Build StateGraph with three expert nodes connected by sequential edges (START → Expert1 → Expert2 → Expert3 → END), compile the graph, and execute the verification pipeline.​
+
+Dashboard generation & Markdown display
+Format all three expert responses with confidence levels, verification status, issues found, and sources into a clean, color-coded Markdown dashboard with safety warnings.​
+
+Testing, validation & final documentation
+Run end-to-end tests with multiple automotive queries, refine prompts for accuracy, validate output quality, and complete README with project overview and usage instructions.​
+
+This workflow shows the complete journey from setup to final verified automotive guidance, demonstrating how your 3-expert system collaborates using LangGraph's multi-agent architecture.
