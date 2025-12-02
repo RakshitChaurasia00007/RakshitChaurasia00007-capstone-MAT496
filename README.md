@@ -119,3 +119,28 @@ Testing, validation & final documentation
 Run end-to-end tests with multiple automotive queries, refine prompts for accuracy, validate output quality, and complete README with project overview and usage instructions.​
 
 This workflow shows the complete journey from setup to final verified automotive guidance, demonstrating how your 3-expert system collaborates using LangGraph's multi-agent architecture.
+
+
+## VIDEO LINK & COCLUSION of The CAPSTONE Project
+https://drive.google.com/file/d/1wrj4DmgVUCndH8kYa-T15fnO09DFLcAN/view?usp=sharing
+
+
+
+## Conclusion
+When I planned this Capstone Project, I set out to build a complete AI-powered automotive knowledge system that uses the LangGraph to coordinate the three specialized expert agents in a verification workflow—combining web search, structured output generation, multi-agent collaboration, and the safety-focused answer generation.​
+
+After completing that the project, I believe I have fully achieved the goals I had set out in my plan.​
+
+I followed each planned step systematically throughout my whole CAPSTONE PROJECT: From the environment setup and dependency installation, to designing the Pydantic models for structured responses, creating specialized prompts for each expert role, implementing the three-expert verification nodes (Primary Mechanic, Verification Specialist, Conflict Resolver), integrating Tavily web search for the real-time automotive information retrieval, building the LangGraph StateGraph workflow with sequential edges, and the finally creating a clean Markdown dashboard to display the  verified results with confidence levels and the  source citations.​
+
+The final system successfully takes any of the automotive question, then processes it through the three independent expert agents who each search the web and reason over the retrieved context, identifies the conflicts or inaccuracies between the expert responses, resolves those conflicts intelligently, and then produces a comprehensive, verified answer with the complete source citations and safety warnings all displayed in an easy-to-understand format.​
+
+I am satisfied with the outcome because this project covers all the core concepts taught in MAT496 by Mr. Ajit Sir: Prompting (specialized system instructions for each expert), Structured Output (Pydantic models with validation), Semantic Search (Tavily web retrieval), RAG-like behavior (context-based answer generation), Tool Calling (experts invoking search functions), and LangGraph (state management, nodes, workflow compilation).​
+
+Beyond the course requirements, I extended the project with a unique creative element—the 3-expert verification system inspired by real-world automotive diagnostic workflows where multiple mechanics cross-check each other's assessments to ensure the safety-critical accuracy.​
+
+This multi-agent approach demonstrates how LangGraph enables sophisticated workflows where the specialized agents collaborate autonomously to produce the more reliable outputs than any single LLM could have ever achieve alone.​
+
+Overall, this project was a genuinely valuable learning for my experience that showed me how the concepts from this course can be applied to solve the  real-world problems where information accuracy and safety matters a lot. I would like to Thanks Mr. Ajit Sir for helping me learn each and every componet of this course and for solving each and every doubt regarding my whole CAPSTONE project.
+ Thank you SIR I Enjoyed The LLM COURSE A LOT !​
+
